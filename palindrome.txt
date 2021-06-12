@@ -1,0 +1,11 @@
+def palindrome(s):
+    c = 0
+    s=''.join(s.lower().split())
+    for i in range(len(s)-1):
+        if s[i] != s[len(s)-i-1]: 
+            return 'no'
+        else:
+            c+=1  
+    return 'yes' if c!=0 else 'no'
+
+palindrome(s)
