@@ -1,0 +1,23 @@
+
+
+
+********
+string = 'pythonhxamples'
+position = 6
+new_character = 'e'
+
+string = string[:position] + new_character + string[position+1:]
+print(string)
+
+
+
+********
+string = 'pythonhxamples'
+position = 6
+new_character = 'e'
+
+temp = list(string)
+temp[position] = new_character
+string = "".join(temp)
+
+print(string)
